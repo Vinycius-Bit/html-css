@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+  
+    header{
+        display: inline-block;
+        background-color: antiquewhite;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+    }
+      /*
+div {
+    Esta regra CSS será aplicada a todas as tags <div> da página.
+
+    display: inline-block;
+    - Faz com que as divs fiquem lado a lado, desde que haja espaço.
+    - Diferente do display: block, que ocupa toda a largura da linha.
+
+    background-color: antiquewhite;
+    - Define a cor de fundo da div.
+    - Neste caso, foi utilizada a cor "antiquewhite".
+
+    border: 1px solid black;
+    - Cria uma borda ao redor da div.
+    - 1px = espessura da borda.
+    - solid = tipo da borda (linha contínua).
+    - black = cor da borda.
+
+    text-align: center;
+    - Centraliza horizontalmente o texto que está dentro da div.
+
+    height: 200px;
+    - Define a altura da div em 200 pixels.
+
+    width: 200px;
+    - Define a largura da div em 200 pixels.
+}
+*/
+
+header:hover{
+    background-color: yellow;
+}
+/*Hover significa: "quando eu passar o mouse por cima"*/
+</style>
+</head>
+
+<body>
+    <header id="d1">01</header> 
+    <header id="d2">02</header>
+    <header id="d3">03</header>
+</body>
+</html>
+
+
+/*
+PSEUDO-CLASSES
+
+As pseudo-classes servem para aplicar um estilo a um elemento
+quando ele está em um determinado estado ou condição.
+
+A sintaxe é:
+
+seletor:pseudo-classe {
+    propriedade: valor;
+}
+
+Exemplos:
+
+div:hover {
+    - É ativada quando o ponteiro do mouse passa sobre a div.
+    - Muito utilizada para criar efeitos de destaque e animações.
+}
+
+a:visited {
+    - Aplica um estilo aos links que o usuário já visitou.
+}
+
+a:link {
+    - Aplica um estilo aos links que ainda não foram visitados.
+}
+
+a:active {
+    - É aplicada no momento em que o elemento está sendo clicado.
+    - O efeito dura apenas enquanto o clique acontece.
+}
+
+input:focus {
+    - É ativada quando um campo de texto recebe o foco,
+      ou seja, quando o usuário clica nele ou navega até ele pelo teclado.
+}
+
+input:checked {
+    - É aplicada quando um checkbox ou botão de opção (radio)
+      está marcado.
+}
+
+li:first-child {
+    - Seleciona apenas o primeiro filho de um elemento.
+    - Exemplo: o primeiro item de uma lista.
+}
+
+li:last-child {
+    - Seleciona apenas o último filho de um elemento.
+}
+
+li:nth-child(numero) {
+    - Seleciona um filho específico de acordo com sua posição.
+    - Exemplo:
+      li:nth-child(2) seleciona o segundo item.
+      li:nth-child(odd) seleciona os itens ímpares.
+      li:nth-child(even) seleciona os itens pares.
+
+Resumo:
+- :hover -> mouse sobre o elemento.
+- :visited -> link já visitado.
+- :link -> link ainda não visitado.
+- :active -> elemento sendo clicado.
+- :focus -> elemento com foco.
+- :checked -> checkbox ou radio marcado.
+- :first-child -> primeiro filho.
+- :last-child -> último filho.
+- :nth-child() -> filho em uma posição específica.
+*/

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+
+.logo{
+    display: block;
+    width: 40%;
+    margin:auto;
+    max-width: 300px;
+}
+
+:root {
+   --fonte-titulo:'Gravitas One';
+   --fonte-geral:'Ruluko Static';
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+body{
+  background-image:url(fundos/fundo3.avif);
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0;
+  font-family: var(--fonte-geral);
+}
+
+header{
+  background-image: url(capa-cafe-sombreado-740x493.jpg);
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+
+  height: auto;
+  height: auto;
+  display: block;
+   min-height: 150px;
+    text-align: center;
+    margin: 0;
+    padding-top: 0;
+}
+header h1{
+text-align: center;
+color: rgb(0, 0, 0);
+font-family:var(--fonte-titulo);
+background-color: darkgreen;
+}
+header p{
+  text-align: center;
+  margin-top: -20px;
+  text-decoration: underline;
+}
+
+
+nav{
+  padding: 10px;
+  background-color: rgb(17, 50, 110);
+}
+nav > a{
+  margin: 3px;
+  color: beige;
+  text-decoration: none;
+}
+nav > a:hover{
+  padding: 10px;
+  color: rgb(237, 240, 240);
+  background-color: rgba(9, 39, 104, 0.986);
+  border-radius: 10px;
+  transition-duration: .4s;
+}
+
+
+main{
+  background-color: white;
+  max-width: 700px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  
+}
+
+main article > h2{
+  text-align: center;
+}
+
+main article > p{
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.p2{
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  padding-top: 10px ;
+}
+
+
+section h2{
+  text-align: center;
+}
+
+section img {
+  display: block;
+  text-align: center;
+  margin: auto;
+  min-height: 100px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+aside{
+  background-color: darkorange;
+  padding: 20px;
+  width: 36%;
+  max-width: 300px;
+  margin-top: 100px;
+  margin-left: auto;
+  border-top-left-radius: 5%;
+  box-shadow: 3px 3px 10px 1px black;
+}
+aside h2{
+  text-align: center;
+}
+
+aside ul{
+  text-align: center;
+  max-width: 40em;
+  margin-left: auto;
+  padding: 0px;
+  list-style-position: inside;
+}
+
+aside li{
+  overflow-wrap: break-word;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.contato{
+ background-color: sienna;
+ margin-top: 10em;
+ margin-right:auto;
+ padding: 10px;
+ max-width: 300px;
+ width: 35%;
+ border-top-right-radius: 5%;
+ box-shadow: 3px 3px 10px 1px black;
+}
+
+.contato p{
+  font-weight: bolder;
+}
+
+.contato h1{
+  color: bisque;
+} 
+
+.contato > h2{
+  color: bisque;
+  text-align: left;
+}
+
+footer > p{
+  text-align: right;
+  margin-left: auto;
+}

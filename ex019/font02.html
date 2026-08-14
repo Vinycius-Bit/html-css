@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+         /*Normalmente não se usa a fonte instalada na página principal do site. Uma boa dica é criar uma pasta específica para a fonte instalada. Ao fazer isso, naturalmente será necessário acrescentar, na URL, nomedapas/nomedafonte. Quando a fonte ta na mesma página que o código, isso não é necessário. A criação da pasta de fonte serve para fins de organização*/
+        @font-face{
+            font-family: 'Helicopter' ;
+            /*Aqui pode-se escolher o nome da fonte. Pode ser o nome que quisermos*/
+            src: url('Bring\ Me\ A\ Helicopter!.otf') format('opentype');
+            /*Aqui colocamos a URL ( o Arquivo ) da fonte que foi instalado*/
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*AGORA, PARA QUE A FONTE FUNCIONE, BASTA POR O NOME QUE ESCOLHEMOS NO FONT-FAMILY DA TAG DESEJADA*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            /*Por exemplo:*/
+            font-family:'Helicopter', Times, serif;
+        
+        }
+    </style>
+</head>
+<body>
+   
+    <h1>OLÁ, MUNDO!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, magni adipisci ipsum nostrum veritatis delectus nisi doloribus. Est odit quibusdam doloribus, sit eaque necessitatibus! Inventore officia ex voluptatibus sed et.</p>
+    <h2>Sub-Título</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis nostrum mollitia vel et fugit sapiente a deserunt in. Reprehenderit eum vitae ut repellendus iusto accusamus voluptas cupiditate veniam qui.</p>
+</body>
+</html>
